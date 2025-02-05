@@ -5,7 +5,27 @@
     <style>
         body{
             background-color: black;
-            color: aliceblue;
+            color: rgb(246, 247, 248);
+            padding: 0;
+            margin: 0;
+        }
+        
+
+        
+        header{
+            text-align: center;
+            position: sticky;
+            top: 0;
+            padding: 10px 0px;
+            background-color: rgb(129, 127, 255);
+        }
+        .navigation-bar ul li{
+            display: inline;
+        }
+        .navigation-bar ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 0px 30px;
         }
 
         .container{
@@ -18,6 +38,17 @@
         }
         .div-1{
             width: 60%;
+            text-align: justify;
+        }
+        .div-1 h2 span{
+            color: blueviolet;
+            font-weight: bolder;
+        }
+        .div-1 p{
+           
+            color: grey;
+            font-size: 16px;
+            padding: 0px 100px 0px 30px;
         }
         .div-2{
             width: 40;
@@ -27,15 +58,131 @@
         .div-2 img{
             border-radius: 5px;
         }
+        #skills-section{
+            text-align: center;
+        }
+        .skills-container{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+        .skill-card{
+            background-color: white;
+            color: black;
+            width: 30%;
+            margin: auto 15px;
+            border-radius: 6px;
+            padding: 80px 3px 30px 3px ;
+
+        }
+        .skill-card h2{
+            font-weight: lighter;
+        }
+        .skill-card p{
+            color: grey;
+            font-size: 15px;
+        }
+        /* styling for work- section*/
+        #work-section{
+            text-align: center;
+        }
+        .work-container{
+            display: flex;
+            color: grey;
+            height: 100vh;
+        }
+        .work-content img{
+            border-top-right-radius:5px ;
+            border-top-left-radius: 5px;
+        }
+        .work-content{
+            border: 1px solid grey;
+            width: 27%;
+            justify-content: center;
+            margin: auto 30px;
+            border-radius: 5px;
+        }
+        .work-content{
+            padding: 40px 15px 10px 7px;
+            font-size: 14px;
+            font-weight: lighter;
+            text-align: justify;
+        }
+        .work-content button{
+            color: gray;
+            background-color: black;
+            border: 1px solid gray;
+            margin: 10px 0px;
+            padding: 7px 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+        }
+        #testimonials-section{
+            text-align: center;
+            margin: 7px 0px;
+
+        }
+        .test-container{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+        .test-content{
+            width: 50%;
+            margin: auto;
+        }
+        .test-words{
+            text-align: justify;
+            padding: 0px 15px;
+            margin-left: 30px;
+
+        }
+        .test-words button{
+            border: none;
+            border-radius: 3px;
+            padding:13px 18px ;
+            font-size: 12px;
+            font-weight: bolder;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+
+        }
+        .test-words p{
+            color: grey;
+            padding: 5px 0px;
+        }
+        .test-img img{
+            border-radius: 50%;
+        }
+        footer{
+            background-color: white;
+            color: black;
+            padding: 10px 0px;
+            text-align: center;
+        }
 
     </style>
     <body>
-        <section>
+        <header>
+            <div class="navigation-bar">
+                <nav>
+                    <ul>
+                        <li><a href="#home-section">Home</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#work-section">Work</a></li>
+                        <li><a href="#testimonials-section">testimonial</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="home-section">
             <div class="container">
                 <div class=" same-margin div-1">
                     <div class="content">
                     <h2>IGIHOZO <span>Angel</span></h2>
-                    <p>I have been working on html and css basics</p>
+                    <p>I am software Developer</p>
                 </div>
                 <div class=" same-margin div-2">
                     <img src="./Angel.JPG"height="200"width="200" alt="image">
@@ -46,6 +193,73 @@
                 </div>
             </div>
         </section>
+        <section id="skills-section">
+            <h1>Specialized In</h1>
+            <div class="skills-container">
+                <div class="skill-card skill-1">
+                    <h2>skill 1</h2>
+                    <p>Ul/UX Design</p>
+    
+                 </div>
+                 <div class="skill-card skill-2">
+                    <h2>skill 2</h2>
+                    <p>Application Developnment</p>
+    
+                 </div>
+                 <div class="skill-card skill-3">
+                    <h2>skill 3</h2>
+                    <p>Website Developnment</p>
+    
+                 </div>
+
+            </div>
+          
+
+        </section>
+        <section id="work-section">
+            <h1>Worked On</h1>
+            <div class="work-container">
+                <div class="work-content work-1">
+                    <img src="./work.jpg"width="300"height="250" alt="picture">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  unde provident asperiores sit at ab dicta nam!</p>
+                    <button>Continue reading</button>
+                </div> 
+                <div class="work-content work-2">
+                    <img src="./work.jpg"width="300"height="250" alt="picture">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <button>Continue reading</button>
+
+                </div>
+                <div class="work-content work-3">
+                    <img src="./work.jpg"width="300"height="250" alt="picture">
+                    <p> Autem repudiandae optio quam quia in eius laborum facere sunt corrupti quasi expedita quos, unde provident asperiores sit at ab dicta nam!</p>
+                    <button>Continue reading</button>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="testimonials-section">
+            <h1>Testimonals</h1>
+            <div class="test-container">
+                <div class="test-content  test-words">
+                    <h1>MUKUNDWA Ange</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <button>Read more ></button>
+
+                </div>
+                <div class="test-content test-img" >
+              <img src="./Ange.jpg"width="300"height="300" alt="testimonial image">
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-bar">
+                <p>&copy;IGIHOZO Angel</p>
+
+            </div>
+        </footer>
         
     </body>
 </html>
